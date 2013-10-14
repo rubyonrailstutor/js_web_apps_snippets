@@ -7,7 +7,7 @@ Corporal.prototype = new Sergeant;
 john = new Corporal
 john.command()
 
-to create a prototypal class relationship on contruction of new class
+// to create a prototypal class relationship on contruction of new class
 
 var Class = function(parent){
   var klass = function () {
@@ -23,8 +23,8 @@ var Class = function(parent){
 
   klass.prototype.init = function (){};
   klass.fn = klass.prototype;
-  klass.fun.parent = klass;
-  klass._super = klass.__proto__;
+  klass.fn.parent = klass;
+  klass._super = klass._proto_;
 
   // use the below to give extend/include behavior to the prototype
   // adding class properties
