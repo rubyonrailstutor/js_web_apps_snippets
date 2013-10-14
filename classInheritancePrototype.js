@@ -50,3 +50,13 @@ var Class = function(parent){
 
 // to check if it all worked...
 var Shark = new Class;
+
+Shark.include({
+  hunt: function() {
+    console.log("eat stuff");
+  }
+});
+
+var HammerHead = new Class(Shark)
+john = new HammerHead
+john.hunt()
